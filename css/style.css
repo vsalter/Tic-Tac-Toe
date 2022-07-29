@@ -1,11 +1,16 @@
 @charset "UTF-8";
 /* CSS Document */
 body {
+	text-align: center;
+}
+
+#board {
 	display: grid;
 	width: 80%;
 	height: 600px;
 	border: 2px black solid;
 	grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+	margin: 30px 10% 10px 10%;
 }
 
 .square {
@@ -13,4 +18,8 @@ body {
   	color: black;
   	border-radius: 5px;
   	border: 2px blue solid;
+}
+
+button {
+	color: black;
 }
