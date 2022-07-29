@@ -1,0 +1,16 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+	display: grid;
+	width: 80%;
+	height: 600px;
+	border: 2px black solid;
+	grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+}
+
+.square {
+	background-color: beige;
+  	color: black;
+  	border-radius: 5px;
+  	border: 2px blue solid;
+}
