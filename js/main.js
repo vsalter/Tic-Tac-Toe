@@ -1,4 +1,8 @@
 // JavaScript Document
+/*let square1 = document.getElementById("1");
+square1.addEventListener("click", function(){
+	square1.style.backgroundColor = "red";
+})*/
 let turn = 1; 
 let id;
 let winner;
@@ -23,6 +27,35 @@ document.querySelectorAll(".square").forEach(function(square){
 
 let button = document.getElementById("restartButton");
 button.addEventListener("click", restartGame);
+
+/*let square2 = document.getElementById("two");
+square2.onclick = makeAmove();
+
+let square3 = document.getElementById("three");
+square3.onclick = makeAmove();
+
+let square4 = document.getElementById("four");
+square4.onclick = makeAmove();
+
+let square5 = document.getElementById("five");
+square5.onclick = makeAmove();
+
+let square6 = document.getElementById("six");
+square6.addEventListener("click", makeAmove());
+
+let square7 = document.getElementById("seven");
+square7.onclick = makeAmove();
+
+let square8 = document.getElementById("eight");
+square8.onclick = makeAmove();
+
+let square9 = document.getElementById("nine");
+square9.onclick = makeAmove();
+
+
+let restart = document.getElementById("restartButton");
+restart.onclick = restartGame;*/
+
 
 function makeAmove(evt) {
 	
@@ -57,9 +90,25 @@ function checkIfWon(string, num) {
 	let match = 0;
 	if (num === 1) {
 		player1moves.push(string);
+		player1moves.forEach(function(){
+			if (winningCombos.includes(num)){
+				match++;
+			}
+			if (match === 3){
+				alert("Player 1 Wins!");
+			}
+		});
 	}
 	else {
 		player2moves.push(string);
+		player2moves.forEach(function(){
+			if (winningCombos.includes(num)){
+				match++;
+			}
+			if (match === 3){
+				alert("Player 2 Wins!");
+			}
+		});
 	}
 };
 
