@@ -87,7 +87,7 @@ function makeAmove(evt) {
 function checkWinner(num) {
 
 	if (num === 1) {
-		if ((hCheck(num)) || (vCheck(num)) || (dCheck())) {
+		if ((hCheck(num)) || (vCheck(num)) || (dCheck(num))) {
 			alert('Player 1 is the winner');
 			return;
 		} else if (tCheck()) {
@@ -98,7 +98,7 @@ function checkWinner(num) {
 			return;
 		}
 	} else {
-		if ((hCheck(num)) || (vCheck(num)) || (dCheck())) {
+		if ((hCheck(num)) || (vCheck(num)) || (dCheck(num))) {
 			alert('Player 2 is the winner');
 			return;
 		} else if (tCheck()) {
