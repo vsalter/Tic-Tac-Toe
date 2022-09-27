@@ -21,7 +21,7 @@ let player1moves = [];
 let player2moves = [];
 
 
-document.querySelectorAll(".square").forEach(function(square){
+document.querySelectorAll(".inSquare").forEach(function(square){
 	square.addEventListener("click", makeAmove);
 });
 

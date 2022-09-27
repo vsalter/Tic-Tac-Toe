@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/* CSS Document */
 body {
 	text-align: center;
 }
@@ -8,7 +7,7 @@ body {
 	display: grid;
 	width: 80%;
 	height: 600px;
-	border: 2px black solid;
+/*	border: 2px black solid;*/
 	grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
 	margin: 30px 10% 10px 10%;
 }
@@ -16,8 +15,30 @@ body {
 .square {
 	background-color: beige;
   	color: black;
-  	border-radius: 5px;
-  	border: 2px blue solid;
+/*  	border-radius: 5px;*/
+/*  	border: 2px blue solid;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#s0, #s1, #s3, #s4 {
+	border-bottom: 10px black solid;
+	border-right: 10px black solid;
+}
+
+#s2, #s5 {
+	border-bottom: 10px black solid;
+}
+
+#s6, #s7 {
+	border-right: 10px black solid;
+}
+
+
+.inSquare {
+	height: 100%;
+  	width: 100%;
 }
 
 #message {
