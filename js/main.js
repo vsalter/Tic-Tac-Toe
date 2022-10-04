@@ -27,12 +27,14 @@ function makeAmove(evt) {
 	else {
 		if (turn === 1){
 			evt.target.style.backgroundColor = "red";
+			evt.target.style.color = "black";
 			evt.target.innerHTML = "X";
 			board[id] = 'X';
 			console.log(board);
 			checkWinner(turn);	
 		}else {
 			evt.target.style.backgroundColor = "lightBlue";
+			evt.target.style.color = "black";
 			evt.target.innerHTML = "O";
 			board[id] = 'O';
 			console.log(board);
@@ -155,7 +157,8 @@ function restartGame() {
 	
 	document.querySelectorAll(".inSquare").forEach(function(square){
 		square.style.background = "beige";
-		square.innerHTML = "";
+		square.innerHTML = "0";
+		square.style.color = "beige"
 		square.addEventListener("click", makeAmove);
 	});
 
