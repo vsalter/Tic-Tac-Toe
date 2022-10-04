@@ -62,7 +62,7 @@ body {
 }
 
 .square {
-	background-color: beige;
+	background-color: white;
 /*  	border-radius: 5px;*/
 /*  	border: 2px blue solid;*/
 	display: flex;
@@ -129,6 +129,12 @@ body {
 	font-weight: 700;
 	font-style: normal;
 	font-size: 150px;
+	color: white;
+}
+
+.inSquare:hover {
+	cursor: pointer;
+	background-color: beige;
 	color: beige;
 }
 
