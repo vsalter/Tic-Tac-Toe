@@ -26,14 +26,14 @@ function makeAmove(evt) {
 	}
 	else {
 		if (turn === 1){
-			evt.target.style.backgroundColor = "red";
+//			evt.target.style.backgroundColor = "red";
 			evt.target.style.color = "black";
 			evt.target.innerHTML = "X";
 			board[id] = 'X';
 			console.log(board);
 			checkWinner(turn);	
 		}else {
-			evt.target.style.backgroundColor = "lightBlue";
+//			evt.target.style.backgroundColor = "lightBlue";
 			evt.target.style.color = "black";
 			evt.target.innerHTML = "O";
 			board[id] = 'O';
@@ -150,15 +150,15 @@ function tCheck(){
 }
 
 
+
 function restartGame() {
 	turn = 1;
 	message.innerHTML = "Player 1's turn";
 	board = [null, null, null, null, null, null, null, null, null];
 	
 	document.querySelectorAll(".inSquare").forEach(function(square){
-		square.style.background = "beige";
 		square.innerHTML = "0";
-		square.style.color = "beige"
+		square.style.color = "white";
 		square.addEventListener("click", makeAmove);
 	});
 
